@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <!--Head----------------------------------------------->
+    <head>
+        <title>Sunset Airlines</title>
+        <link rel="stylesheet" type="text/css" href="AboutStyle.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <!--Body----------------------------------------------->
+    <body onclick="unexpand()">
+        <!--Navbar-->
+        <div id="navbar">
+            <a href="../index.html"><div class="logo"></div></a>
+            <div class="links">
+                <a class="big" href="FrequentFlyer.html">Frequent Flyer Program</a>
+                <a class="big" href="BookFlight.html">Book a Flight</a>
+                <a class="big" href="#">About Us</a>
+                <a class="small" onclick="expand()">&#9776;</a>
+            </div>
+            <p class="slogan">'Over the Horizon'</p>
+        </div>
+        <!--Bar that comes out of left side when you click the hamburger button-->
+        <div id="sidebar" onclick="unexpand()">
+            <a href="FrequentFlyer.html">Frequent Flyer Program</a>
+            <a href="BookFlight.html">Book a Flight</a>
+            <a href="#">About Us</a>
+        </div>
+        <!--Actual Content--------------------------------->
+        <h1 class="imgText">About Us</h1>
+        <div id="Plane1" class="Plane"></div>
+        <div id="Box1" class="rectangle">Our Purpose</div>
+        <p class="aboutText">Sunset Airline's Purpose is to provide affordable and luxurious air transportation to the southwestern United States and parts of Mexico.</p>
+        <div id="Plane2" class="Plane"></div>
+        <div id="Box2" class="rectangle">Our Vision</div>
+        <p class="aboutText">People will less frequently drive long hours to travel and more frequently fly there for a relatively low rate.</p>
+        <div id="Plane3" class="Plane"></div>
+        <div id="Box3" class="rectangle">Our Mission</div>
+        <p class="aboutText">Our mission is to allow people to feel comfortable in the high quality experience of flying with Sunset Airlines</p>
+        <!--Footer-->
+        <div class="footer">
+            <div class="footerContent">
+                <div class="footerBox">
+                    <h2>Contact Us</h2>
+                    <a href="mailto:support@sunsetairlines.com"><p>support@sunsetairlines.com</p></a>
+                    <a href="tel:15203246546"><p>+1 (520) 324-6546</p></a>
+                </div>
+                <div class="footerBox">
+                    <h2>Join Us</h2>
+                    <a href="#"><p>Careers</p></a>
+                </div>
+                <div class="footerBox">
+                    <h2>Follow Us On Social Media</h2>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../Images/instagram.png"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../Images/twitter.png"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../Images/facebook.png"></a>
+                </div>
+                <div class="footerIcons">
+                </div>
+            </div>
+        </div>
+        <script>
+            //Opens and Closes the sidebar
+            var open = false;
+            function unexpand() {
+                if (open == true) {
+                    document.getElementById("sidebar").style.left = "-232px";
+                    open = false;
+                }
+            }
+            function expand() {
+                if (open == false) {
+                    document.getElementById("sidebar").style.left = 0;
+                    setTimeout(function(){open = true; }, 1);
+                } else {
+                    unexpand();
+                }
+            }
+            setTimeout(function(){document.getElementById("Box1").classList.add("BoxLeft");}, 500);
+            document.getElementById("Box2").classList.add("BoxRight");
+            document.getElementById("Box3").classList.add("BoxLeft");
+            
+            setTimeout(function(){document.getElementById("Plane1").classList.add("FlyLeft");}, 500);
+            document.getElementById("Plane2").classList.add("FlyRight");
+            document.getElementById("Plane3").classList.add("FlyLeft");
+        </script>
+    </body>
+</html>

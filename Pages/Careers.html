@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <!--Head----------------------------------------------->
+    <head>
+        <title>Sunset Airlines</title>
+        <link rel="stylesheet" type="text/css" href="CareersStyle.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <!--Body----------------------------------------------->
+    <body onclick="unexpand()">
+        <!--Navbar-->
+        <div id="navbar">
+            <a href="../index.html"><div class="logo"></div></a>
+            <div class="links">
+                <a class="big" href="FrequentFlyer.html">Frequent Flyer Program</a>
+                <a class="big" href="BookFlight.html">Book a Flight</a>
+                <a class="big" href="About.html">About Us</a>
+                <a class="small" onclick="expand()">&#9776;</a>
+            </div>
+            <p class="slogan">'Over the Horizon'</p>
+        </div>
+        <!--Bar that comes out of left side when you click the hamburger button-->
+        <div id="sidebar" onclick="unexpand()">
+            <a href="FrequentFlyer.html">Frequent Flyer Program</a>
+            <a href="BookFlight.html">Book a Flight</a>
+            <a href="About.html">About Us</a>
+        </div>
+        <!--Actual Content--------------------------------->
+        <h1 class="imgText">Careers</h1>
+        <div class="topButtons">
+                <a href="#why"><div class="SmallBoi">Why?</div></a>
+                <a href="#how"><div class="SmallBoi">How?</div></a>
+                <a href="#jobs"><div class="MrGalaxyWide">Jobs</div></a>
+        </div>
+        <div class="info">
+            <div id="why" class="infoBox">
+                <div class="left">
+                    <h2>Why should you work with us?</h2>
+                </div>
+                <div class="right">
+                    <p>
+                        Sunset Airlines is an equal opportunity employer who needs hardworking indiviuals like you. Sunset airlines provides benefits such as medical coverage, a 401(k) plan, and cah rewards with our wellness programs. On top of all of these benefits, Sunset Airlines will also provide all of your training not just for free, but you will get paid to go through it. Lastly, you will be working at an airline so of course you will get flights for absolutely free! As long as there is remaining space for you.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="how" class="infoBox">
+                <div class="left">
+                    <h2>How to apply</h2>
+                </div>
+                <div class="right">
+                    <p>
+                        Applying for Sunset Airlines is easy. Start by sending an email to <a href="mailto:careers@sunsetairlines.com">careers@sunsetairlines.com</a> providing your name, phone number, resume, birthdate, and what job you are applying for of course. This email will serve as your cover letter. After submitting your application you will recieve an email regarding your decision within two weeks. Details for what to do next will be in the email.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="jobs" class="infoBox">
+                <div class="left">
+                    <h2>Available Jobs</h2>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>Airline Pilot/Co-Pilot</li>
+                        <ul>
+                            <li>Bachelor's degree in aircraft operations, aviation, aeronautical engineering, or a related field.</li>
+                            <li>Pilot's License</li>
+                            <li>1,500 hours of Flight Experience</li>
+                            <li>Ability to pass vision/hearing test</li>
+                            <li>21 years of age or older</li>
+                        </ul>
+                        <br>
+                        <li>Flight Attendant</li>
+                        <ul>
+                            <li>High School Diploma</li>
+                            <li>Knowledge of a second language preferred</li>
+                            <li>Ability to pass vision/hearing test</li>
+                            <li>21 years of age or older</li>
+                        </ul>
+                        <br>
+                        <li>Customer Service</li>
+                        <ul>
+                            <li>Strong Communication Skills</li>
+                            <li>Knowledge of a second language preferred</li>
+                            <li>Ability to pass vision/hearing test</li>
+                            <li>21 years of age or older</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="footerContent">
+                <div class="footerBox">
+                    <h2>Contact Us</h2>
+                    <a href="mailto:support@sunsetairlines.com"><p>support@sunsetairlines.com</p></a>
+                    <a href="tel:15203246546"><p>+1 (520) 324-6546</p></a>
+                </div>
+                <div class="footerBox">
+                    <h2>Join Us</h2>
+                    <a href="#"><p>Careers</p></a>
+                </div>
+                <div class="footerBox">
+                    <h2>Follow Us On Social Media</h2>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../Images/instagram.png"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../Images/twitter.png"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../Images/facebook.png"></a>
+                </div>
+                <div class="footerIcons">
+                </div>
+            </div>
+        </div>
+        <script>
+            //Opens and Closes the sidebar
+            var open = false;
+            function unexpand(){
+                if (open == true) {
+                    document.getElementById("sidebar").style.left = "-232px";
+                    open = false;
+                }
+            }
+            function expand() {
+                if (open == false) {
+                    document.getElementById("sidebar").style.left = 0;
+                    setTimeout(function(){open = true; }, 1);
+                } else {
+                    unexpand();
+                }
+            }
+        </script>
+    </body>
+</html>

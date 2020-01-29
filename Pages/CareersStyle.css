@@ -1,0 +1,281 @@
+/*All Screen Sizes-------------------------------------------------------------------------------------*/
+
+/*Header-----------------------------------------------------------------------------------------------*/
+#navbar{
+    width: calc(100% + 16px);
+    background-image: linear-gradient(#ff3356, #fa6a00, #f0d717);
+    text-align: left;
+    margin-left: -8px;
+    margin-top: -8px;
+    font-size: 5em;
+    border-radius: 0 0 20px 20px;
+}
+.slogan{
+    font-size: 18px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    color: white;
+    font-family: sans-serif;
+}
+.logo{
+    width: 300px;
+    height: 100px;
+    background-image: url(../Images/Logo.png);
+    background-size: 100% 100%;
+}
+.links{
+    position: absolute;
+    top: 0;
+    left: 400px;
+    width: calc(100% - 400px);
+    height: 150px;
+}
+.links a{
+    color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    float: right;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: right;
+    transition: 0.25s;
+    text-shadow: 3px 3px 5px black;
+}
+.links a:hover, .links a:active{
+    text-shadow: 1px 1px 3px black;
+}
+.small{
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    font-size: 50px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.big{
+    opacity: 0;
+    font-size: 24px;
+    margin-top: 15px;
+    height: 0;
+    width: 100%;
+}
+.big:hover{
+    text-decoration: underline;
+}
+#sidebar{
+    position: fixed;
+    left: -232px;
+    top: 0;
+    height: 100%;
+    width: 230px;
+    background-color: rgba(120, 120, 120, 0.85);
+    border-right: solid black 2px;
+    transition: 0.5s;
+    border-radius: 0 20px 20px 0;
+}
+#sidebar a{
+    color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    text-align: right;
+    transition: 0.25s;
+    text-shadow: 2px 2px 3px black;
+    font-size: 18px;
+    width: 100%;
+}
+#sidebar a:hover, #sidebar a:active{
+    text-shadow: 1px 1px 2px black;
+}
+
+/*Footer-----------------------------------------------------------------------------------------------*/
+.footer{
+    width: calc(100% + 16px);
+    height: 150px;
+    background-color: grey;
+    margin-top: 20px;
+    margin-left: -8px;
+    border-radius: 20px 20px 0 0;
+}
+.footerContent{
+    width: 450px;
+    height: calc(100% - 10px);
+    margin-left: calc(50% - 225px);
+    color: white;
+}
+.footer img{
+    width: 20px;
+}
+.footer h2{
+    font-size: 18px;
+}
+.footer p{
+    font-size: 12px;
+}
+.footerContent div{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.footerContent a:hover{
+    text-decoration: underline;
+}
+/*Main Content-----------------------------------------------------------------------------------------*/
+body{
+    background-image: url(../Images/TiledBackground.jpg);
+    background-size: 1000px;
+    background-attachment: fixed;
+}
+.footer a, #sidebar a{
+    text-decoration: none;
+    color: white;
+}
+.topButtons a{
+    cursor: pointer;
+}
+
+.imgText{
+    margin: 0 0 0 15px;
+	color: #00000000;
+	font-size: 4em;
+    text-align: center;
+    
+	background-image: url(../Images/TucsonSunset.jpg);
+    background-attachment: fixed;
+	background-position: 0 0;
+	background-size: 100% 50%;
+	
+	-webkit-background-clip: text;
+    -webkit-text-stroke: 2px black;
+}
+.topButtons{
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+tr{
+    width: 100%;
+}
+.topButtons div{
+    border: black solid 1px;
+    padding: 11px 0;
+    margin: 1px;
+    text-align: center;
+    font-size: 28px;
+    font-family: fantasy;
+    background-image: linear-gradient(175deg, #ff3356, #f0d717);
+    background-attachment: fixed;
+    background-size: 100% 42%;
+    border-radius: 20px;
+    float: left;
+    color: white;
+    text-shadow: black 3px 3px 5px;
+    transition: 0.5s;
+    box-shadow: black 3px 3px 2px;
+}
+.SmallBoi{
+    width: calc(50% - 4px);
+}
+.MrGalaxyWide{
+    width: calc(100% - 4px);
+}
+.topButtons div:hover, .topButtons div:active{
+    text-shadow: black 1px 1px 2px;
+    box-shadow: black 1px 1px 2px;
+    background-image: linear-gradient(175deg, #f0d717, #ff3356);
+}
+.info tr{
+    border-top: black solid 1px;
+}
+.left{
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    float: left;
+    font-family: sans-serif;
+}
+.right{
+    width: 96%;
+    padding: 35px 2%;
+    float: left;
+    margin-top: -50px;
+    font-size: 20px;
+}
+.right p{
+    text-align: justify;
+}
+.infoBox{
+    width: calc(100%);
+    border-radius: 50px;
+}
+.infoBox ol{
+    width: calc(100%/2 - 40px);
+    float: left;
+}
+.clearfix{
+    clear: both;
+}     
+/*Screens Larger than 768px----------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+    .footerContent{
+        width: 600px;
+        margin-left: calc(50% - 300px);
+    }
+    .small{
+        opacity: 0;
+    }
+    .big{
+        opacity: 1;
+        height: auto;
+    }
+    .imgText{
+        font-size: 5em;
+    }
+    .topButtons div{
+        width: calc(33% - 4px);
+        padding: 20px 0;
+    }
+    .left{
+        width: 40%;
+        text-align: center;
+    }
+    .right{
+        width: 56%;
+        padding: 35px 2%;
+        margin-top: 0;
+    }
+    .footer img{
+        width: 40px;
+    }
+    .footer h2{
+        font-size: 24px;
+    }
+    .footer p{
+        font-size: 16px;
+    }
+    .logo{
+        width: 400px;
+        height: 150px;
+    }
+    .slogan{
+        font-size: 24px;
+    }
+}
+            
+/*Screens Larger Than 992px----------------------------------------------------------------------------*/
+@media (min-width: 992px) {
+    .links a{
+        float: right;
+    }
+    .big{
+        opacity: 1;
+        height: auto;
+        width: auto;
+    }
+    .imgText{
+        font-size: 8em;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <!--Head----------------------------------------------->
+    <head>
+        <title>Sunset Airlines</title>
+        <link rel="stylesheet" type="text/css" href="FFStyle.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <!--Body----------------------------------------------->
+    <body onclick="unexpand()">
+        <!--Navbar-->
+        <div id="navbar">
+            <a href="../index.html"><div class="logo"></div></a>
+            <div class="links">
+                <a class="big" href="#">Sunset Rewards</a>
+                <a class="big" href="BookFlight.html">Book a Flight</a>
+                <a class="big" href="About.html">About Us</a>
+                <a class="small" onclick="expand()">&#9776;</a>
+            </div>
+            <p class="slogan">'Over the Horizon'</p>
+        </div>
+        <!--Bar that comes out of left side when you click the hamburger button-->
+        <div id="sidebar" onclick="unexpand()">
+            <a href="#">Sunset Rewards</a>
+            <a href="BookFlight.html">Book a Flight</a>
+            <a href="About.html">About Us</a>
+        </div>
+        <!--Actual Content--------------------------------->
+        <h1 class="imgText">Sunset Rewards</h1>
+        <div class="topButtons">
+                <a href="#about"><div>About</div></a>
+                <a href="#earn"><div>Earn</div></a>
+                <a href="#card"><div>Sunset Card</div></a>
+                <a href="#redeem"><div>Redeem</div></a>
+        </div>
+        <div class="info">
+            <div id="about" class="infoBox">
+                <div class="left">
+                    <h2>What is Sunset Rewards?</h2>
+                </div>
+                <div class="right">
+                    <p>
+                        Sunset Rewards is a frequent flyer program which rewards people who fly with Sunset Airlines often. It's quite simple, the more you fly, the more free flights you get. You could also earn points towards flights with our partners listed below.
+                    </p>
+                    <ul>
+                        <h4>Our Partner Airlines</h4>
+                        <li>Northeast Airlines</li>
+                        <li>Alpha Airlines</li>
+                        <li>Undivided Airlines</li>
+                        <li>Air Mexico</li>
+                    </ul>
+                    <ul>
+                        <h4>Our Partner Car Rentals</h4>
+                        <li>Venture Rent-A-Car</li>
+                        <li>Allowance Rent A Car</li>
+                        <li>SIVA Rent A Car</li>
+                        <li>Interstate Car Rental</li>
+                    </ul>
+                    <ul>
+                        <h4>Our Partner Hotels</h4>
+                        <li>Motel 7</li>
+                        <li>Luxury Lodging</li>
+                        <li>Favorite Eastern</li>
+                        <li>La Courta</li>
+                        <li>Weeks Inn</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="earn" class="infoBox">
+                <div class="left">
+                    <h2>How to Earn Points</h2>
+                </div>
+                <div class="right">
+                    <h4>Earn With Us!</h4>
+                        <p>Booking Flights: Perhaps easiest way to earn points is to book flights with us. Points earned may vary based on flight length and time of year.</p>
+                        <p>Food Purchased on Our Flights: When paying for meals or drinks aboard one of our planes, you will be earning points.</p>
+                        <p>The Sunset Card: With the sunet card, you could earn point paying for things in everyday life.</p>
+                        <h4>Earn With Our Partners</h4>
+                        <p>Airlines: Going somewhere we dont fly to? Book with one of our partner airlines to still earn points!</p>
+                        <p>Hotels: When booking hotels with one of our partners you could earn points based on location and length of stay.</p>
+                        <p>Rental Cars: Need a rental car for your vacation? Rent with any of our partners to have the potential of earning points for just driving!</p>
+                        <p>Eating: We wil even reward you for eating at some restraunts! Points earned will vary based on price of food, and restraunt.</p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="card" class="infoBox">
+                <div class="left">
+                    <h2>Sunset Card</h2>
+                </div>
+                <div class="right">
+                    <p>
+                        The Sunset Card is a credit card that earns you points with every purchase you make. When you use the Sunset Card, you earn 2 point per dollar spent using it on purchases with Sunset Airlines and our partners and 1 point per dollar when using it on all other purchases. You could also earn a bonus 20,000 points after spending $1000 in the first 6 months from recieving the card and every year you get an additional 10,000 point just for continuing to have the card.
+                    </p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="redeem" class="infoBox">
+                <div class="left">
+                    <h2>Redeem</h2>
+                </div>
+                <div class="right">
+                    <p>
+                        Redeeming points is even easier than earning them. When paying for your flight, just choose to pay with points. You could also redeem them in flight to pay for food and drinks by using your sunset card.
+                    </p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="footerContent">
+                <div class="footerBox">
+                    <h2>Contact Us</h2>
+                    <a href="mailto:support@sunsetairlines.com"><p>support@sunsetairlines.com</p></a>
+                    <a href="tel:15203246546"><p>+1 (520) 324-6546</p></a>
+                </div>
+                <div class="footerBox">
+                    <h2>Join Us</h2>
+                    <a href="Careers.html"><p>Careers</p></a>
+                </div>
+                <div class="footerBox">
+                    <h2>Follow Us On Social Media</h2>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../Images/instagram.png"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../Images/twitter.png"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../Images/facebook.png"></a>
+                </div>
+                <div class="footerIcons">
+                </div>
+            </div>
+        </div>
+        <script>
+            //Opens and Closes the sidebar
+            var open = false;
+            function unexpand(){
+                if (open == true) {
+                    document.getElementById("sidebar").style.left = "-232px";
+                    open = false;
+                }
+            }
+            function expand() {
+                if (open == false) {
+                    document.getElementById("sidebar").style.left = 0;
+                    setTimeout(function(){open = true; }, 1);
+                } else {
+                    unexpand();
+                }
+            }
+        </script>
+    </body>
+</html>
